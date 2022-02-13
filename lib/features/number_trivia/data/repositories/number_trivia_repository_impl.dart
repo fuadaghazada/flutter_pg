@@ -1,8 +1,8 @@
 import 'package:flutter_pg/core/error/exceptions.dart';
+import 'package:flutter_pg/core/network/network_info.dart';
 import 'package:meta/meta.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_pg/core/error/failures.dart';
-import 'package:flutter_pg/core/platform/network_info.dart';
 import 'package:flutter_pg/features/number_trivia/data/datasources/number_trivia_local_datasource.dart';
 import 'package:flutter_pg/features/number_trivia/data/datasources/number_trivia_remote_datasource.dart';
 import 'package:flutter_pg/features/number_trivia/domain/entities/number_trivia.dart';
