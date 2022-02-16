@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_pg/features/number_trivia/presentation/bloc/bloc.dart';
 import 'package:flutter_pg/features/number_trivia/presentation/widgets/loading_widget.dart';
 import 'package:flutter_pg/features/number_trivia/presentation/widgets/message_display.dart';
+import 'package:flutter_pg/features/number_trivia/presentation/widgets/trivia_controls.dart';
 import 'package:flutter_pg/features/number_trivia/presentation/widgets/trivia_display.dart';
 import 'package:flutter_pg/injection_container.dart';
 
@@ -52,23 +53,7 @@ class NumberTriviaPage extends StatelessWidget {
               ),
               SizedBox(height: 20.0),
               // Bottom  half
-              Column(
-                children: [
-                  Placeholder(fallbackHeight: 40),
-                  SizedBox(height: 10.0),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: Placeholder(fallbackHeight: 30),
-                      ),
-                      SizedBox(width: 10.0),
-                      Expanded(
-                        child: Placeholder(fallbackHeight: 30),
-                      ),
-                    ],
-                  )
-                ],
-              )
+              TriviaControls()
             ],
           ),
         ),
